@@ -21,8 +21,12 @@ public enum Tipo
 }
 
 [CreateAssetMenu(menuName = "Animal", fileName = "NewAnimalFeatures")]
+
 public class AnimalFeatures : ScriptableObject
 {
+    public Dieta diet;
+    public Origen origin;
+    public Tipo type;
     [SerializeField] private Dieta dieta;
     [SerializeField] private Origen origen;
     [SerializeField] private Tipo tipo;
@@ -30,5 +34,4 @@ public class AnimalFeatures : ScriptableObject
     public Dieta DietaAnimal => dieta;
     public Origen OrigenAnimal => origen;
     public Tipo TipoAnimal => tipo;
-
 }

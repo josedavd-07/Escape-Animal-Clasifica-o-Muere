@@ -7687,7 +7687,7 @@ GameObject:
   - component: {fileID: 472940597}
   - component: {fileID: 472940596}
   - component: {fileID: 472940595}
-  - component: {fileID: 472940594}
+  - component: {fileID: 472940599}
   m_Layer: 0
   m_Name: Corral-B
   m_TagString: Untagged
@@ -7695,24 +7695,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &472940594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 472940593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d50eeea6b051c964e974acbf4fb883a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PenLogic
-  tipoCorral: 1
-  dietaCorrecta: 0
-  origenCorrecto: 0
-  tipoCorrecto: 1
-  fuerzaExpulsion: 8
-  fuerzaVertical: 4
 --- !u!65 &472940595
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7806,6 +7788,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &472940599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472940593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d50eeea6b051c964e974acbf4fb883a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PenLogic
+  tipoCorral: 1
+  dietaCorrecta: 1
+  origenCorrecto: 0
+  tipoCorrecto: 0
+  fuerzaExpulsion: 8
+  fuerzaVertical: 4
+  animales: []
 --- !u!1001 &476475136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13439,7 +13440,7 @@ GameObject:
   - component: {fileID: 829709232}
   - component: {fileID: 829709231}
   - component: {fileID: 829709230}
-  - component: {fileID: 829709229}
+  - component: {fileID: 829709234}
   m_Layer: 0
   m_Name: Corral-A
   m_TagString: Untagged
@@ -13447,24 +13448,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &829709229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 829709228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d50eeea6b051c964e974acbf4fb883a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PenLogic
-  tipoCorral: 0
-  dietaCorrecta: 1
-  origenCorrecto: 0
-  tipoCorrecto: 0
-  fuerzaExpulsion: 8
-  fuerzaVertical: 4
 --- !u!65 &829709230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13558,6 +13541,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &829709234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829709228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d50eeea6b051c964e974acbf4fb883a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PenLogic
+  tipoCorral: 0
+  dietaCorrecta: 0
+  origenCorrecto: 0
+  tipoCorrecto: 1
+  fuerzaExpulsion: 8
+  fuerzaVertical: 4
+  animales: []
 --- !u!1001 &833117644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23432,7 +23434,7 @@ GameObject:
   - component: {fileID: 1477693694}
   - component: {fileID: 1477693693}
   - component: {fileID: 1477693692}
-  - component: {fileID: 1477693691}
+  - component: {fileID: 1477693696}
   m_Layer: 0
   m_Name: Corral-C
   m_TagString: Untagged
@@ -23440,24 +23442,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1477693691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477693690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d50eeea6b051c964e974acbf4fb883a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PenLogic
-  tipoCorral: 2
-  dietaCorrecta: 0
-  origenCorrecto: 0
-  tipoCorrecto: 0
-  fuerzaExpulsion: 8
-  fuerzaVertical: 4
 --- !u!65 &1477693692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23473,7 +23457,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -23551,6 +23535,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1477693696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477693690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d50eeea6b051c964e974acbf4fb883a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PenLogic
+  tipoCorral: 2
+  dietaCorrecta: 1
+  origenCorrecto: 0
+  tipoCorrecto: 0
+  fuerzaExpulsion: 8
+  fuerzaVertical: 4
+  animales: []
 --- !u!1 &1479312774
 GameObject:
   m_ObjectHideFlags: 0

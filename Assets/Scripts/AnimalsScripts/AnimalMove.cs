@@ -3,7 +3,9 @@ using UnityEngine.Rendering;
 
 public class AnimalMove : MonoBehaviour
 {
-    public int speed; 
+    [SerializeField] AnimalFeatures animalFeatures;
+    public AnimalFeatures data;
+    public int speed;
     public int routine;
     public float cronometer = 1;
     public Animator animator;
@@ -11,7 +13,14 @@ public class AnimalMove : MonoBehaviour
     public float angle;
     public GameObject target;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        if (data == null)
+        {
+            data = animalFeatures;
+        }
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -23,7 +32,6 @@ public class AnimalMove : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         Move();
@@ -31,7 +39,7 @@ public class AnimalMove : MonoBehaviour
 
     void Move()
     {
-        if(Vector3.Distance(transform.position, target.transform.position) > 20)
+        if(Vector3.Distance(transform.position, target.transform.position) > 10)
         {
             animator.SetBool("isRunning", false);
             cronometer += 1 * Time.deltaTime;
@@ -69,7 +77,6 @@ public class AnimalMove : MonoBehaviour
             animator.SetBool("isRunning", true);
             transform.Translate(Vector3.forward * 2 * Time.deltaTime);
 
-        }   
+        }
     }
 }
-
