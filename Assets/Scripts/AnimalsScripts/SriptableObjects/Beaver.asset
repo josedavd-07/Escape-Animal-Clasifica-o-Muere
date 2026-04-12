@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c72688808a768b4cab286bf86ae2558, type: 3}
   m_Name: Beaver
   m_EditorClassIdentifier: Assembly-CSharp::AnimalFeatures
-  diet: 0
-  origin: 0
-  type: 0
+  nombreAnimal: 0
   dieta: 0
   origen: 0
   tipo: 2

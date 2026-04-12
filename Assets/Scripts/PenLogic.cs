@@ -12,27 +12,24 @@ public class PenLogic : MonoBehaviour
 
     [Header("Configuracion del corral")]
     [SerializeField] private TipoCorral tipoCorral;
-    [SerializeField] private Dieta dietaCorrecta;
-    [SerializeField] private Origen origenCorrecto;
-    [SerializeField] private Tipo tipoCorrecto;
+    [SerializeField] private Diet dietaCorrecta;
+    [SerializeField] private Origin origenCorrecto;
+    [SerializeField] private Type tipoCorrecto;
 
     [Header("Expulsion del animal")]
     [SerializeField] private float fuerzaExpulsion = 8f;
     [SerializeField] private float fuerzaVertical = 4f;
 
-    //[Header("Animales disponibles")]
-    //[SerializeField] private AnimalFeatures[] animales;
-
     private void ChooseOptions()
     {
-            int randomValue = Random.Range(0, System.Enum.GetValues(typeof(Dieta)).Length);
-            dietaCorrecta = (Dieta)randomValue;
+        int randomValue = Random.Range(0, System.Enum.GetValues(typeof(Diet)).Length);
+        dietaCorrecta = (Diet)randomValue;
 
-            randomValue = Random.Range(0, System.Enum.GetValues(typeof(Origen)).Length);
-            origenCorrecto = (Origen)randomValue;
-
-            randomValue = Random.Range(0, System.Enum.GetValues(typeof(Tipo)).Length);
-            tipoCorrecto = (Tipo)randomValue;
+        randomValue = Random.Range(0, System.Enum.GetValues(typeof(Origin)).Length);
+        origenCorrecto = (Origin)randomValue;
+        
+        randomValue = Random.Range(0, System.Enum.GetValues(typeof(Type)).Length);
+        tipoCorrecto = (Type)randomValue;
     }
 
     private void OnTriggerEnter(Collider other)

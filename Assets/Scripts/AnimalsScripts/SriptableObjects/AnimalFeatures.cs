@@ -1,19 +1,35 @@
 using UnityEngine;
 
-public enum Dieta
+public enum AnimalName
+{
+    Beaver,
+    Bunny,
+    Cat,
+    Cow,
+    Deer,
+    Dog,
+    Elephant,
+    Fox,
+    Giraffe,
+    Hog,
+    Lion,
+    Monkey
+}
+
+public enum Diet
 {
     Herbivore,
     Carnivore,
     Omnivore
 }
 
-public enum Origen
+public enum Origin
 {
     Salvage,
     Domestic
 }
 
-public enum Tipo
+public enum Type
 {
     Dangerous,
     Useful,
@@ -24,14 +40,13 @@ public enum Tipo
 
 public class AnimalFeatures : ScriptableObject
 {
-    public Dieta diet;
-    public Origen origin;
-    public Tipo type;
-    [SerializeField] private Dieta dieta;
-    [SerializeField] private Origen origen;
-    [SerializeField] private Tipo tipo;
+    [SerializeField] public AnimalName nombreAnimal;
+    [SerializeField] public Diet dieta;
+    [SerializeField] public Origin origen;
+    [SerializeField] public Type tipo;
 
-    public Dieta DietaAnimal => dieta;
-    public Origen OrigenAnimal => origen;
-    public Tipo TipoAnimal => tipo;
+    public AnimalName NombreAnimal => nombreAnimal;
+    public Diet DietaAnimal => dieta;
+    public Origin OrigenAnimal => origen;
+    public Type TipoAnimal => tipo;
 }
