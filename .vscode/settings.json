@@ -56,6 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Escape Animal_Clasifica o Muere.slnx",
+    "dotnet.defaultSolution": "Escape-Animal-Clasifica-o-Muere.slnx",
     "dotnet.preferCSharpExtension": true
 }
